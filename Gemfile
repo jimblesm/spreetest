@@ -31,6 +31,8 @@ gem 'unicorn'
 gem 'devise'
 gem 'spree', '3.0.4'
 
+gem 'mysql2', '~> 0.4.0'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
