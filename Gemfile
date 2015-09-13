@@ -27,6 +27,7 @@ gem 'sshkit'
 
 # Use Unicorn as the app server
 gem 'unicorn'
+gem 'devise'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
