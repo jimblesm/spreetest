@@ -31,7 +31,8 @@ gem 'unicorn'
 gem 'devise'
 gem 'spree', '3.0.4'
 
-gem 'mysql2', '~> 0.4.0'
+# mysql2 v0.4.0 isn't compatible with rails 4.2.2
+gem 'mysql2', '~> 0.3.18'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
