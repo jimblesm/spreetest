@@ -32,6 +32,11 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 
+  # Not using chef in dev/test
+  gem 'spree', '3.0.4'
+  gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+  gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -42,7 +47,4 @@ group :development, :test do
   gem 'spring'
 end
 
-#gem 'spree', '3.0.4'
-#gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
-#gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 
