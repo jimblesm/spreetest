@@ -28,12 +28,11 @@ gem 'sshkit'
 # Use Unicorn as the app server
 gem 'unicorn'
 
+gem 'devise'
+gem 'spree', '3.0.4'
+
 # mysql2 v0.4.0 isn't compatible with rails 4.2.2
 gem 'mysql2', '~> 0.3.18'
-
-gem 'spree', '3.0.4'
-gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -41,7 +40,8 @@ group :development, :test do
 
   # Not using chef in dev/test
   
-   
+  gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+  gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
