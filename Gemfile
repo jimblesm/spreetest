@@ -29,6 +29,8 @@ gem 'sshkit'
 gem 'unicorn'
 
 gem 'spree', '3.0.4'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise", branch: '3-0-stable'
 
 # mysql2 v0.4.0 isn't compatible with rails 4.2.2
 gem 'mysql2', '~> 0.3.18'
@@ -46,5 +48,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-
